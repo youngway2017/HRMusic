@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44D006571C322EB10053A80E /* HRMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006561C322EB10053A80E /* HRMusic.m */; };
+		44D0065A1C322F020053A80E /* HRMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006591C322F020053A80E /* HRMusicTool.m */; };
+		44D0065D1C323C130053A80E /* HRMusicListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0065C1C323C130053A80E /* HRMusicListTableViewController.m */; };
+		44D006771C325AB00053A80E /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006611C325AB00053A80E /* MJDictionaryCache.m */; };
+		44D006781C325AB00053A80E /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006641C325AB00053A80E /* MJExtensionConst.m */; };
+		44D006791C325AB00053A80E /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006661C325AB00053A80E /* MJFoundation.m */; };
+		44D0067A1C325AB00053A80E /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006681C325AB00053A80E /* MJProperty.m */; };
+		44D0067B1C325AB00053A80E /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0066A1C325AB00053A80E /* MJPropertyKey.m */; };
+		44D0067C1C325AB00053A80E /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0066C1C325AB00053A80E /* MJPropertyType.m */; };
+		44D0067D1C325AB00053A80E /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0066E1C325AB00053A80E /* NSObject+MJClass.m */; };
+		44D0067E1C325AB00053A80E /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006701C325AB00053A80E /* NSObject+MJCoding.m */; };
+		44D0067F1C325AB00053A80E /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006721C325AB00053A80E /* NSObject+MJKeyValue.m */; };
+		44D006801C325AB00053A80E /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006741C325AB00053A80E /* NSObject+MJProperty.m */; };
+		44D006811C325AB00053A80E /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006761C325AB00053A80E /* NSString+MJExtension.m */; };
+		44D006871C3260DE0053A80E /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006841C3260DE0053A80E /* UIImage+Extension.m */; };
+		44D006881C3260DE0053A80E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006861C3260DE0053A80E /* UIView+Extension.m */; };
+		44D0068C1C3262910053A80E /* HRMusicDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0068A1C3262910053A80E /* HRMusicDetailController.m */; };
+		44D0068F1C32637F0053A80E /* HRMusicDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D0068E1C32637F0053A80E /* HRMusicDetailController.xib */; };
 		44F192E01C31336700F2C426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F192DE1C31336700F2C426 /* Main.storyboard */; };
 		44F192E21C31336700F2C426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F192E11C31336700F2C426 /* Assets.xcassets */; };
 		44F192E51C31336700F2C426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F192E31C31336700F2C426 /* LaunchScreen.storyboard */; };
@@ -70,7 +88,6 @@
 		44F1937E1C31352B00F2C426 /* normal.aac in Resources */ = {isa = PBXBuildFile; fileRef = 44F193691C31352B00F2C426 /* normal.aac */; };
 		44F1937F1C31352B00F2C426 /* sendcard.aac in Resources */ = {isa = PBXBuildFile; fileRef = 44F1936A1C31352B00F2C426 /* sendcard.aac */; };
 		44F193801C31352B00F2C426 /* win.aac in Resources */ = {isa = PBXBuildFile; fileRef = 44F1936B1C31352B00F2C426 /* win.aac */; };
-		44F1938B1C31381300F2C426 /* HRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F193841C31381300F2C426 /* HRViewController.m */; };
 		44F1938C1C31381300F2C426 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F193881C31381300F2C426 /* AppDelegate.m */; };
 		44F1938D1C31381300F2C426 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F193891C31381300F2C426 /* main.m */; };
 		44F193911C313A9F00F2C426 /* HRAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F193901C313A9F00F2C426 /* HRAudioTool.m */; };
@@ -94,6 +111,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44D006551C322EB10053A80E /* HRMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMusic.h; sourceTree = "<group>"; };
+		44D006561C322EB10053A80E /* HRMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMusic.m; sourceTree = "<group>"; };
+		44D006581C322F020053A80E /* HRMusicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMusicTool.h; sourceTree = "<group>"; };
+		44D006591C322F020053A80E /* HRMusicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMusicTool.m; sourceTree = "<group>"; };
+		44D0065B1C323C130053A80E /* HRMusicListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMusicListTableViewController.h; sourceTree = "<group>"; };
+		44D0065C1C323C130053A80E /* HRMusicListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMusicListTableViewController.m; sourceTree = "<group>"; };
+		44D006601C325AB00053A80E /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
+		44D006611C325AB00053A80E /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
+		44D006621C325AB00053A80E /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		44D006631C325AB00053A80E /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		44D006641C325AB00053A80E /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		44D006651C325AB00053A80E /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		44D006661C325AB00053A80E /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		44D006671C325AB00053A80E /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		44D006681C325AB00053A80E /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		44D006691C325AB00053A80E /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		44D0066A1C325AB00053A80E /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		44D0066B1C325AB00053A80E /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		44D0066C1C325AB00053A80E /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		44D0066D1C325AB00053A80E /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		44D0066E1C325AB00053A80E /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		44D0066F1C325AB00053A80E /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		44D006701C325AB00053A80E /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		44D006711C325AB00053A80E /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		44D006721C325AB00053A80E /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		44D006731C325AB00053A80E /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		44D006741C325AB00053A80E /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		44D006751C325AB00053A80E /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		44D006761C325AB00053A80E /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		44D006831C3260DE0053A80E /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		44D006841C3260DE0053A80E /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		44D006851C3260DE0053A80E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		44D006861C3260DE0053A80E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		44D006891C3262910053A80E /* HRMusicDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMusicDetailController.h; sourceTree = "<group>"; };
+		44D0068A1C3262910053A80E /* HRMusicDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMusicDetailController.m; sourceTree = "<group>"; };
+		44D0068E1C32637F0053A80E /* HRMusicDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRMusicDetailController.xib; sourceTree = "<group>"; };
 		44F192D21C31336700F2C426 /* HRMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F192DF1C31336700F2C426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44F192E11C31336700F2C426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,8 +216,6 @@
 		44F193691C31352B00F2C426 /* normal.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = normal.aac; sourceTree = "<group>"; };
 		44F1936A1C31352B00F2C426 /* sendcard.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendcard.aac; sourceTree = "<group>"; };
 		44F1936B1C31352B00F2C426 /* win.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = win.aac; sourceTree = "<group>"; };
-		44F193831C31381300F2C426 /* HRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRViewController.h; sourceTree = "<group>"; };
-		44F193841C31381300F2C426 /* HRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRViewController.m; sourceTree = "<group>"; };
 		44F193871C31381300F2C426 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44F193881C31381300F2C426 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		44F193891C31381300F2C426 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -197,6 +248,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44D0065E1C325AA70053A80E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				44D0065F1C325AB00053A80E /* MJExtension */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		44D0065F1C325AB00053A80E /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				44D006601C325AB00053A80E /* MJDictionaryCache.h */,
+				44D006611C325AB00053A80E /* MJDictionaryCache.m */,
+				44D006621C325AB00053A80E /* MJExtension.h */,
+				44D006631C325AB00053A80E /* MJExtensionConst.h */,
+				44D006641C325AB00053A80E /* MJExtensionConst.m */,
+				44D006651C325AB00053A80E /* MJFoundation.h */,
+				44D006661C325AB00053A80E /* MJFoundation.m */,
+				44D006671C325AB00053A80E /* MJProperty.h */,
+				44D006681C325AB00053A80E /* MJProperty.m */,
+				44D006691C325AB00053A80E /* MJPropertyKey.h */,
+				44D0066A1C325AB00053A80E /* MJPropertyKey.m */,
+				44D0066B1C325AB00053A80E /* MJPropertyType.h */,
+				44D0066C1C325AB00053A80E /* MJPropertyType.m */,
+				44D0066D1C325AB00053A80E /* NSObject+MJClass.h */,
+				44D0066E1C325AB00053A80E /* NSObject+MJClass.m */,
+				44D0066F1C325AB00053A80E /* NSObject+MJCoding.h */,
+				44D006701C325AB00053A80E /* NSObject+MJCoding.m */,
+				44D006711C325AB00053A80E /* NSObject+MJKeyValue.h */,
+				44D006721C325AB00053A80E /* NSObject+MJKeyValue.m */,
+				44D006731C325AB00053A80E /* NSObject+MJProperty.h */,
+				44D006741C325AB00053A80E /* NSObject+MJProperty.m */,
+				44D006751C325AB00053A80E /* NSString+MJExtension.h */,
+				44D006761C325AB00053A80E /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		44D006821C3260970053A80E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				44D006831C3260DE0053A80E /* UIImage+Extension.h */,
+				44D006841C3260DE0053A80E /* UIImage+Extension.m */,
+				44D006851C3260DE0053A80E /* UIView+Extension.h */,
+				44D006861C3260DE0053A80E /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		44F192C91C31336700F2C426 = {
 			isa = PBXGroup;
 			children = (
@@ -367,8 +467,11 @@
 		44F193821C31381300F2C426 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				44F193831C31381300F2C426 /* HRViewController.h */,
-				44F193841C31381300F2C426 /* HRViewController.m */,
+				44D0065B1C323C130053A80E /* HRMusicListTableViewController.h */,
+				44D0065C1C323C130053A80E /* HRMusicListTableViewController.m */,
+				44D006891C3262910053A80E /* HRMusicDetailController.h */,
+				44D0068A1C3262910053A80E /* HRMusicDetailController.m */,
+				44D0068E1C32637F0053A80E /* HRMusicDetailController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -376,6 +479,8 @@
 		44F193851C31381300F2C426 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				44D006551C322EB10053A80E /* HRMusic.h */,
+				44D006561C322EB10053A80E /* HRMusic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -383,6 +488,8 @@
 		44F193861C31381300F2C426 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				44D006821C3260970053A80E /* Category */,
+				44D0065E1C325AA70053A80E /* Lib */,
 				44F1938E1C31398700F2C426 /* Tool */,
 				44F193871C31381300F2C426 /* AppDelegate.h */,
 				44F193881C31381300F2C426 /* AppDelegate.m */,
@@ -403,6 +510,8 @@
 			children = (
 				44F1938F1C313A9F00F2C426 /* HRAudioTool.h */,
 				44F193901C313A9F00F2C426 /* HRAudioTool.m */,
+				44D006581C322F020053A80E /* HRMusicTool.h */,
+				44D006591C322F020053A80E /* HRMusicTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -569,6 +678,7 @@
 				44F192E21C31336700F2C426 /* Assets.xcassets in Resources */,
 				44F1934C1C3134BD00F2C426 /* 10405520.mp3 in Resources */,
 				44F193311C3134BD00F2C426 /* bb@2x.jpg in Resources */,
+				44D0068F1C32637F0053A80E /* HRMusicDetailController.xib in Resources */,
 				44F1936C1C31352B00F2C426 /* buyao.aac in Resources */,
 				44F193501C3134BD00F2C426 /* 14945107.mp3 in Resources */,
 				44F192E01C31336700F2C426 /* Main.storyboard in Resources */,
@@ -596,10 +706,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44F1938B1C31381300F2C426 /* HRViewController.m in Sources */,
+				44D0067E1C325AB00053A80E /* NSObject+MJCoding.m in Sources */,
+				44D006781C325AB00053A80E /* MJExtensionConst.m in Sources */,
+				44D0068C1C3262910053A80E /* HRMusicDetailController.m in Sources */,
+				44D0067D1C325AB00053A80E /* NSObject+MJClass.m in Sources */,
+				44D0067B1C325AB00053A80E /* MJPropertyKey.m in Sources */,
+				44D006571C322EB10053A80E /* HRMusic.m in Sources */,
 				44F1938D1C31381300F2C426 /* main.m in Sources */,
+				44D006881C3260DE0053A80E /* UIView+Extension.m in Sources */,
+				44D0067A1C325AB00053A80E /* MJProperty.m in Sources */,
+				44D006791C325AB00053A80E /* MJFoundation.m in Sources */,
+				44D006771C325AB00053A80E /* MJDictionaryCache.m in Sources */,
 				44F193911C313A9F00F2C426 /* HRAudioTool.m in Sources */,
 				44F1938C1C31381300F2C426 /* AppDelegate.m in Sources */,
+				44D0067C1C325AB00053A80E /* MJPropertyType.m in Sources */,
+				44D0065D1C323C130053A80E /* HRMusicListTableViewController.m in Sources */,
+				44D0067F1C325AB00053A80E /* NSObject+MJKeyValue.m in Sources */,
+				44D006811C325AB00053A80E /* NSString+MJExtension.m in Sources */,
+				44D006871C3260DE0053A80E /* UIImage+Extension.m in Sources */,
+				44D0065A1C322F020053A80E /* HRMusicTool.m in Sources */,
+				44D006801C325AB00053A80E /* NSObject+MJProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -823,6 +949,7 @@
 				44F193011C31336700F2C426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F193021C31336700F2C426 /* Build configuration list for PBXNativeTarget "HRMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -831,6 +958,7 @@
 				44F193041C31336700F2C426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44F193051C31336700F2C426 /* Build configuration list for PBXNativeTarget "HRMusicUITests" */ = {
 			isa = XCConfigurationList;
@@ -839,6 +967,7 @@
 				44F193071C31336700F2C426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

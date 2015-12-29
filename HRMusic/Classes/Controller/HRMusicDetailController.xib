@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HRMusicDetailController">
+            <connections>
+                <outlet property="view" destination="IC9-ht-xVb" id="FbF-xI-m3w"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IC9-ht-xVb">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_cover_pic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="PSq-1r-iJL" userLabel="背景图片">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="500"/>
+                    <animations/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5xD-sv-a3Y" userLabel="按钮View">
+                    <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.44283124804496765" green="0.18438068032264709" blue="0.92765063047409058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Tzq-V7-CAp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-IT-Gwm" userLabel="词">
+                    <rect key="frame" x="544" y="30" width="41" height="48"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="41" id="wHw-5c-tX9"/>
+                        <constraint firstAttribute="height" constant="48" id="zWB-wW-4sl"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="lyric_normal"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr5-4s-PnL" userLabel="quit">
+                    <rect key="frame" x="15" y="30" width="41" height="48"/>
+                    <animations/>
+                    <state key="normal" image="quit"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGH-pM-MIH" userLabel="infoView">
+                    <rect key="frame" x="0.0" y="440" width="600" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Eo-2e-gYw" userLabel="进度条(下)View">
+                            <rect key="frame" x="0.0" y="50" width="550" height="10"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.9450981021" green="0.0" blue="0.2470588386" alpha="1" colorSpace="deviceRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1O-QK-EwD" userLabel="进度条(上)View">
+                            <rect key="frame" x="0.0" y="50" width="100" height="10"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.18823531269999999" green="0.84313732389999996" blue="0.26274511220000002" alpha="0.77000000000000002" colorSpace="deviceRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="qqZ-8c-dQw"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04：23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-sJ-YKV" userLabel="歌曲总时长Label">
+                            <rect key="frame" x="550" y="50" width="50" height="10"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.13712615249999999" green="0.15769995640000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="pyo-ri-5xz"/>
+                                <constraint firstAttribute="width" constant="50" id="y51-y1-Qp6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMr-lU-xce" userLabel="滑块button">
+                            <rect key="frame" x="90" y="45" width="41" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="41" id="tKb-F4-iRE"/>
+                                <constraint firstAttribute="height" constant="21" id="xyS-Dr-n8V"/>
+                            </constraints>
+                            <state key="normal" title="02:12" backgroundImage="process_thumb"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周杰伦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leE-gn-Spm" userLabel="歌曲名label">
+                            <rect key="frame" x="10" y="0.0" width="580" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="sqS-zv-cFo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我只中国人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5X-mR-12n" userLabel="歌手label">
+                            <rect key="frame" x="10" y="30" width="580" height="20"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="leE-gn-Spm" firstAttribute="top" secondItem="wGH-pM-MIH" secondAttribute="top" id="1kG-ZN-mW2"/>
+                        <constraint firstItem="1Eo-2e-gYw" firstAttribute="leading" secondItem="wGH-pM-MIH" secondAttribute="leading" id="6we-ZH-7VB"/>
+                        <constraint firstItem="leE-gn-Spm" firstAttribute="leading" secondItem="wGH-pM-MIH" secondAttribute="leading" constant="10" id="AF4-6w-S5L"/>
+                        <constraint firstItem="b5X-mR-12n" firstAttribute="trailing" secondItem="leE-gn-Spm" secondAttribute="trailing" id="Bm4-Cm-Hc5"/>
+                        <constraint firstItem="1Eo-2e-gYw" firstAttribute="top" secondItem="K1O-QK-EwD" secondAttribute="top" id="CA3-LI-iuV"/>
+                        <constraint firstItem="DMr-lU-xce" firstAttribute="leading" secondItem="wGH-pM-MIH" secondAttribute="leading" constant="90" id="FsM-yu-YM2"/>
+                        <constraint firstItem="b5X-mR-12n" firstAttribute="leading" secondItem="leE-gn-Spm" secondAttribute="leading" id="IeE-hV-Asm"/>
+                        <constraint firstAttribute="bottom" secondItem="Oou-sJ-YKV" secondAttribute="bottom" id="J91-lR-LvS"/>
+                        <constraint firstItem="1Eo-2e-gYw" firstAttribute="bottom" secondItem="K1O-QK-EwD" secondAttribute="bottom" id="LT0-iO-uYC"/>
+                        <constraint firstAttribute="trailing" secondItem="leE-gn-Spm" secondAttribute="trailing" constant="10" id="NKj-1L-ND8"/>
+                        <constraint firstItem="Oou-sJ-YKV" firstAttribute="leading" secondItem="1Eo-2e-gYw" secondAttribute="trailing" id="Qdv-Eo-ZXx"/>
+                        <constraint firstItem="b5X-mR-12n" firstAttribute="top" secondItem="leE-gn-Spm" secondAttribute="bottom" id="T4u-1l-Nn6"/>
+                        <constraint firstItem="DMr-lU-xce" firstAttribute="centerY" secondItem="K1O-QK-EwD" secondAttribute="centerY" id="Utr-Ot-BT7"/>
+                        <constraint firstItem="Oou-sJ-YKV" firstAttribute="bottom" secondItem="1Eo-2e-gYw" secondAttribute="bottom" id="Vme-6W-ZtW"/>
+                        <constraint firstAttribute="height" constant="60" id="WXb-FQ-rsZ"/>
+                        <constraint firstItem="K1O-QK-EwD" firstAttribute="top" secondItem="b5X-mR-12n" secondAttribute="bottom" id="eem-ii-aP1"/>
+                        <constraint firstItem="K1O-QK-EwD" firstAttribute="leading" secondItem="wGH-pM-MIH" secondAttribute="leading" id="fWm-F2-8Cw"/>
+                        <constraint firstAttribute="trailing" secondItem="Oou-sJ-YKV" secondAttribute="trailing" id="gas-Lg-DCe"/>
+                        <constraint firstItem="Oou-sJ-YKV" firstAttribute="top" secondItem="1Eo-2e-gYw" secondAttribute="top" id="zaK-au-mnM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstItem="PSq-1r-iJL" firstAttribute="top" secondItem="IC9-ht-xVb" secondAttribute="top" id="41S-S8-F6g"/>
+                <constraint firstItem="iFb-IT-Gwm" firstAttribute="width" secondItem="zr5-4s-PnL" secondAttribute="width" id="8IB-4f-4XY"/>
+                <constraint firstItem="zr5-4s-PnL" firstAttribute="leading" secondItem="IC9-ht-xVb" secondAttribute="leading" constant="15" id="DYt-jX-G8Y"/>
+                <constraint firstAttribute="trailing" secondItem="iFb-IT-Gwm" secondAttribute="trailing" constant="15" id="IgK-6Y-hfB"/>
+                <constraint firstAttribute="trailing" secondItem="PSq-1r-iJL" secondAttribute="trailing" id="JFH-f8-zMb"/>
+                <constraint firstAttribute="bottom" secondItem="PSq-1r-iJL" secondAttribute="bottom" constant="100" id="JZa-mk-Huc"/>
+                <constraint firstItem="iFb-IT-Gwm" firstAttribute="height" secondItem="zr5-4s-PnL" secondAttribute="height" id="LS8-o5-l7z"/>
+                <constraint firstItem="iFb-IT-Gwm" firstAttribute="top" secondItem="zr5-4s-PnL" secondAttribute="top" id="P2d-e2-Ad9"/>
+                <constraint firstItem="5xD-sv-a3Y" firstAttribute="leading" secondItem="IC9-ht-xVb" secondAttribute="leading" id="Syo-fA-ika"/>
+                <constraint firstAttribute="trailing" secondItem="5xD-sv-a3Y" secondAttribute="trailing" id="UHX-Nv-mjY"/>
+                <constraint firstItem="iFb-IT-Gwm" firstAttribute="bottom" secondItem="zr5-4s-PnL" secondAttribute="bottom" id="UgQ-B9-thj"/>
+                <constraint firstItem="wGH-pM-MIH" firstAttribute="leading" secondItem="IC9-ht-xVb" secondAttribute="leading" id="fa6-vd-gzf"/>
+                <constraint firstItem="PSq-1r-iJL" firstAttribute="leading" secondItem="IC9-ht-xVb" secondAttribute="leading" id="mbw-5Y-H19"/>
+                <constraint firstAttribute="bottom" secondItem="5xD-sv-a3Y" secondAttribute="bottom" id="nAy-9I-1IR"/>
+                <constraint firstItem="iFb-IT-Gwm" firstAttribute="top" secondItem="IC9-ht-xVb" secondAttribute="top" constant="30" id="s50-MM-fzt"/>
+                <constraint firstItem="5xD-sv-a3Y" firstAttribute="top" secondItem="wGH-pM-MIH" secondAttribute="bottom" id="uDK-p3-bMi"/>
+                <constraint firstAttribute="trailing" secondItem="wGH-pM-MIH" secondAttribute="trailing" id="yha-C1-SfD"/>
+            </constraints>
+            <point key="canvasLocation" x="290" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lyric_normal" width="41" height="48"/>
+        <image name="play_cover_pic_bg" width="320" height="320"/>
+        <image name="process_thumb" width="41" height="21"/>
+        <image name="quit" width="41" height="48"/>
+    </resources>
+</document>
