@@ -7,8 +7,22 @@
 //
 
 #import "HRMusicDetailController.h"
+#import "UIView+Extension.h"
 
 @interface HRMusicDetailController ()
+
+@property (strong, nonatomic) IBOutlet UILabel *musicNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *singerNameLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *durationLabel;
+
+@property (strong, nonatomic) IBOutlet UIView *progressView;
+@property (strong, nonatomic) IBOutlet UIView *progressBackView;
+
+@property (strong, nonatomic) IBOutlet UIButton *sliderButton;
+
+- (IBAction)dismissClick;
+- (IBAction)onTapGesture:(UITapGestureRecognizer *)sender;
 
 @end
 
@@ -19,19 +33,48 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (instancetype)init {
+    if (self = [super init]) {
+        UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
+        self.view.frame = keyWindow.bounds;
+        self.view.y = keyWindow.height;
+        [keyWindow addSubview:self.view];
+    }
+    return self;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setMusic:(HRMusic *)music {
+    _music = music;
+    self.musicNameLabel.text = music.name;
+    self.singerNameLabel.text = music.singer;
 }
-*/
+
+- (void)show {
+    [UIView animateWithDuration:1 animations:^{
+        self.view.y = 0;
+    } completion:^(BOOL finished) {
+//        <#code#>
+    }];
+}
+
+- (void)dismiss {
+    [UIView animateWithDuration:1 animations:^{
+        self.view.y = self.view.height;
+    } completion:^(BOOL finished) {
+//        <#code#>
+    }];
+}
+
+- (IBAction)dismissClick {
+    [self dismiss];
+}
+
+- (IBAction)onTapGesture:(UITapGestureRecognizer *)sender {
+    CGPoint point = [sender locationInView:self.progressBackView];
+    self.sliderButton.centerX = point.x;
+    self.progressView.width = point.x;
+    NSLog(@"xxxx");
+}
 
 @end

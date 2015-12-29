@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HRMusic.h"
 
 @interface HRMusicDetailController : UIViewController
 
+@property (nonatomic, strong) HRMusic *music;
+
+- (void)show;
+
+- (void)dismiss;
 @end

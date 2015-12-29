@@ -13,6 +13,7 @@
 #import "UIView+Extension.h"
 
 @interface HRMusicListTableViewController ()
+@property (nonatomic, strong) HRMusicDetailController *detailMusicVC;
 
 @end
 
@@ -22,6 +23,14 @@
     [super viewDidLoad];
     
     
+}
+
+#pragma mark - 懒加载
+- (HRMusicDetailController *)detailMusicVC {
+    if (_detailMusicVC == nil) {
+        _detailMusicVC = [[HRMusicDetailController alloc] init];
+    }
+    return _detailMusicVC;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,16 +68,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     HRMusic *music = [HRMusicTool getMusicList][indexPath.row];
+    
     [HRMusicTool setCurrentMusic:music];
     [HRMusicTool startPlayMusic];
-    HRMusicDetailController *detailVC = [[HRMusicDetailController alloc] init];
-    detailVC.view.y = self.view.height;
-    [UIView animateWithDuration:3 animations:^{
-        detailVC.view.y = 0;
-        [self.navigationController presentViewController:detailVC animated:YES completion:nil];
-    } completion:^(BOOL finished) {
-//        <#code#>
-    }];
+    
+    [self.detailMusicVC setMusic:music];
+    [self.detailMusicVC show];
     
 }
 
