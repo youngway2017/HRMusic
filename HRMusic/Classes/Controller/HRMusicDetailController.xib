@@ -83,7 +83,7 @@
                         <constraint firstItem="vaA-GC-sGU" firstAttribute="centerY" secondItem="oFx-Yc-grY" secondAttribute="centerY" id="nxo-Hw-yPR"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-IT-Gwm" userLabel="词">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-IT-Gwm" userLabel="词">
                     <rect key="frame" x="544" y="30" width="41" height="48"/>
                     <animations/>
                     <constraints>
@@ -95,7 +95,7 @@
                         <action selector="lrcClick" destination="-1" eventType="touchUpInside" id="xoX-J8-iLh"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr5-4s-PnL" userLabel="quit">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr5-4s-PnL" userLabel="quit">
                     <rect key="frame" x="15" y="30" width="41" height="48"/>
                     <animations/>
                     <state key="normal" image="quit"/>
