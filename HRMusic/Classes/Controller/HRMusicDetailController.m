@@ -138,6 +138,7 @@
     if (_music == music) {
         return;
     }
+    self.currentRow = 0;
     self.cellTextColor = HRRandomColor;
     _music = music;
     [HRMusicTool setCurrentMusic:music];
@@ -150,9 +151,7 @@
     self.musicNameLabel.text = music.name;
     self.singerNameLabel.text = music.singer;
     self.backImageView.image = [UIImage imageNamed:music.icon];
-    
-    
-    
+
     self.durationLabel.text = [self sencondsToString:self.player.duration];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
