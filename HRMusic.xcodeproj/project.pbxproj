@@ -25,6 +25,7 @@
 		44D006881C3260DE0053A80E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D006861C3260DE0053A80E /* UIView+Extension.m */; };
 		44D0068C1C3262910053A80E /* HRMusicDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D0068A1C3262910053A80E /* HRMusicDetailController.m */; };
 		44D0068F1C32637F0053A80E /* HRMusicDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44D0068E1C32637F0053A80E /* HRMusicDetailController.xib */; };
+		44D64A921C33CED900ED96E7 /* HRLrc.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D64A911C33CED900ED96E7 /* HRLrc.m */; };
 		44F192E01C31336700F2C426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F192DE1C31336700F2C426 /* Main.storyboard */; };
 		44F192E21C31336700F2C426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F192E11C31336700F2C426 /* Assets.xcassets */; };
 		44F192E51C31336700F2C426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F192E31C31336700F2C426 /* LaunchScreen.storyboard */; };
@@ -147,6 +148,8 @@
 		44D006891C3262910053A80E /* HRMusicDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRMusicDetailController.h; sourceTree = "<group>"; };
 		44D0068A1C3262910053A80E /* HRMusicDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRMusicDetailController.m; sourceTree = "<group>"; };
 		44D0068E1C32637F0053A80E /* HRMusicDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HRMusicDetailController.xib; sourceTree = "<group>"; };
+		44D64A901C33CED900ED96E7 /* HRLrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRLrc.h; sourceTree = "<group>"; };
+		44D64A911C33CED900ED96E7 /* HRLrc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRLrc.m; sourceTree = "<group>"; };
 		44F192D21C31336700F2C426 /* HRMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44F192DF1C31336700F2C426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44F192E11C31336700F2C426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -479,6 +482,8 @@
 		44F193851C31381300F2C426 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				44D64A901C33CED900ED96E7 /* HRLrc.h */,
+				44D64A911C33CED900ED96E7 /* HRLrc.m */,
 				44D006551C322EB10053A80E /* HRMusic.h */,
 				44D006561C322EB10053A80E /* HRMusic.m */,
 			);
@@ -720,6 +725,7 @@
 				44F193911C313A9F00F2C426 /* HRAudioTool.m in Sources */,
 				44F1938C1C31381300F2C426 /* AppDelegate.m in Sources */,
 				44D0067C1C325AB00053A80E /* MJPropertyType.m in Sources */,
+				44D64A921C33CED900ED96E7 /* HRLrc.m in Sources */,
 				44D0065D1C323C130053A80E /* HRMusicListTableViewController.m in Sources */,
 				44D0067F1C325AB00053A80E /* NSObject+MJKeyValue.m in Sources */,
 				44D006811C325AB00053A80E /* NSString+MJExtension.m in Sources */,
