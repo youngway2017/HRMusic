@@ -14,5 +14,8 @@
     return [NSString stringWithFormat:@"name=%@,filename=%@,singer=%@",self.name,self.filename,self.singer];
 }
 
+- (BOOL)isEqual:(HRMusic *)other {
+    return [self.filename isEqualToString:other.filename];
+}
 
 @end

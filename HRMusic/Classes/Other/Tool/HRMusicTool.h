@@ -8,12 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "HRMusic.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface HRMusicTool : NSObject
 
 + (void)setCurrentMusic:(HRMusic *)music;
+
++ (AVAudioPlayer *) getCurrentMusicPlayer;
+
 + (void)startPlayMusic;
 
 + (NSMutableArray *)getMusicList;
+
++ (HRMusic *)previousMusic;
++ (HRMusic *)nextMusic;
+
+
 
 @end

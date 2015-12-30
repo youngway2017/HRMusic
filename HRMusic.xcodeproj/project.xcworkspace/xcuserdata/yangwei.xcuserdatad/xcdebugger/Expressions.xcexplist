@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[HRMusicDetailController updateProgress]:HRMusicDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.progressBackView.width">
+            </PersistentString>
+            <PersistentString
+               value = "self.progressBackView.width * progress">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[HRMusicDetailController playOrPause]:HRMusicDetailController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.playOrPauseButton.selected">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

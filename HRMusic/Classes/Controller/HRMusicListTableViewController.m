@@ -69,9 +69,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     HRMusic *music = [HRMusicTool getMusicList][indexPath.row];
     
-    [HRMusicTool setCurrentMusic:music];
-    [HRMusicTool startPlayMusic];
-    
     [self.detailMusicVC setMusic:music];
     [self.detailMusicVC show];
     

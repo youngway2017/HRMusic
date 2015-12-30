@@ -40,6 +40,32 @@ static NSMutableArray *_musicList;
     _currentMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
 }
 
++ (AVAudioPlayer *) getCurrentMusicPlayer {
+    return _currentMusicPlayer;
+}
+
++ (HRMusic *)nextMusic {
+    NSUInteger index = [_musicList indexOfObject:_currentMusic];
+    index++;
+    if (index >= _musicList.count) {
+        index = 0;
+    }
+    return _musicList[index];
+}
+
++ (HRMusic *)previousMusic {
+    NSUInteger index = [_musicList indexOfObject:_currentMusic];
+    if (index == 0) {
+        index = _musicList.count -1;
+    } else {
+        index--;
+    }
+    
+    return _musicList[index];
+}
+
+
+
 + (NSMutableArray *)getMusicList {
     return _musicList;
 }
